@@ -2,7 +2,6 @@
 import React from 'react';
 import './App.css';                       
 import ImageSlider from './comps/ImageSlider';
-import LandingText from './comps/LandingText';
 import LandingForm from './comps/LandingForm';
 import CenteredText from './comps/CenteredText';
 import NavBar from './comps/NavBar';

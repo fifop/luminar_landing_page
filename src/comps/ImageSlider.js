@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import './ImageSlider.css';
 
 function ImageSlaider() {
-    const images = [
-        "images/1.jpg", 
-        "images/2.jpg",
-        "images/3.jpg"
-      ];
+    const images = useMemo(()=>[
+        "images/u0001.jpg", 
+        "images/u0002.jpg",
+        "images/u0003.jpg"
+      ],[])
     
       const [currentImage, setCurrentImage] = useState(images[0]);
     
@@ -19,7 +19,7 @@ function ImageSlaider() {
         }, 3000);
     
         return () => clearInterval(timer);
-      }, []);
+      }, [images]);
     
       return <img className="landing-image" src={currentImage} alt="Landing" />;
 }
