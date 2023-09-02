@@ -1,0 +1,88 @@
+.landing-form {
+    background-color: #FAF3E0;
+    border: 1px solid #e0e0e0; 
+    border-radius: 10px; 
+    margin-top: 100px;
+    padding: 20px; 
+    width: 100%; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.85);
+}
+
+.center-text {
+    display: flex;
+    text-align: center;
+    font-size: 40px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #D9A463;
+    padding: 10px; /* ריווח מסביב לטקסט */
+    border-radius: 5px; /* פינות מעוגלות */
+}
+
+.landing-form input, .landing-form button {
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #D9A463; /* צבע כחול-טורקיז בהיר */
+    color: #FFF;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    max-width: 100px;
+}
+
+button:hover {
+    background-color: #303F3D;
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media only screen and (max-width: 768px) {
+    .landing-form {
+        max-width: 90vw; /* Adjusts the maximum width based on viewport width */
+    }
+
+    .center-text {
+        font-size: 5vw; /* Adjusts font size based on viewport width */
+    }
+
+    .landing-form input, .landing-form button {
+        width: 100%; /* Full width on smaller screens for better usability */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .landing-form {
+        /* top: 50%;  */
+        bottom: auto;
+        width: 130vh;
+        height: 90vh; 
+        /* transform: translateX(-50%) translateY(0%); */
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; /* Center content vertically */
+        align-items: center; /* Center content horizontally */
+    }
+
+    .center-text {
+        font-size: 6vw;
+    }
+
+    .landing-form input, .landing-form button {
+        font-size: 5vw;
+        width: 60%; /* Narrower width for input and buttons */
+        max-width: none;
+    }
+}

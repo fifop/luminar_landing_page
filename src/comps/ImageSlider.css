@@ -1,0 +1,11 @@
+/* ImageSlider.css */
+.landing-image {
+    width: 100%;  /* רוחב מלא של האלמנט האב */
+    height: 80vh;
+    object-fit: cover;
+    object-position:center;  /* מרכוז התמונה באופן אופקי ואנכי */
+    display: block; /* הפיכת התמונה להתנהג כאלמנט block כדי שה-margin יעבוד */
+    border-radius: 10px; /* פינות מעוגלות */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* הוספת הצללים קלים */
+  }
+  

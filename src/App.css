@@ -1,0 +1,11 @@
+/* App.css */
+.App {
+    font-family: 'Arial', sans-serif;
+    /* padding: 20px; */
+    /* max-width: 800px; */
+    margin: 0 auto;
+    display: flex;  /* השתמש ב-Flexbox */
+    flex-direction: column;  /* סידור אנכי של האלמנטים */
+    align-items: center;  /* מרכוז האלמנטים אופקית */
+  }
+  
