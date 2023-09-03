@@ -14,7 +14,6 @@
     width: 140px;
     order: 1;
     margin-left: 20px;
-
 }
 
 .navbar-items {
@@ -29,11 +28,8 @@
 .navbar-items a {
     font-family: 'Rubik', sans-serif;
     font-weight: 600;
-}
-
-.navbar-items a {
     text-decoration: none;
-        color: #333;
+    color: #333;
     padding: 5px 10px;
     transition: background-color 0.3s;
 }
@@ -57,7 +53,6 @@
     gap: 10px;
 }
 
-
 .social-icons img {
     height: 100px; 
 }
@@ -65,7 +60,6 @@
 .social-icons a {
     font-size: 40px;
     margin-right: 20px;
-
 }
 
 .social-icons a[href*="facebook"] svg {
@@ -94,9 +88,16 @@
 
     .burger-button {
         display: block;
+        z-index: 1;
+        position: relative;
+        margin-right: 10px;
+        color:#D9A463;
+    }
+
+    .social-icons{
+        display: none;
     }
 }
-
 
 .lead-button {
     font-family: 'Rubik', sans-serif;
@@ -113,4 +114,38 @@
 
 .lead-button:hover {
     background-color: #4e3003d7;
+}
+
+@media (min-width: 769px) and (max-width: 1800px) {
+
+    .navbar-items {
+        display: flex;
+        gap: 10px;
+        list-style-type: none;
+        padding: 0;
+        margin: 0 auto;
+        order: 4;
+        margin-left:-235px
+    }
+
+
+    .social-icons {
+        justify-content: flex-end;
+    }
+    .navbar-logo img {
+        height: 60px;
+        width: 105px;
+        order: 1;
+        margin-left: 15px;
+    }
+
+ 
+
+    .social-icons img {
+        height: 80px; 
+    }
+
+    .social-icons a {
+        font-size: 30px;
+    }
 }
